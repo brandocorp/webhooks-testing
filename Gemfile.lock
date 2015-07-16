@@ -1,6 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    amq-protocol (1.9.2)
+    bunny (1.7.0)
+      amq-protocol (>= 1.9.2)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
@@ -14,7 +17,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  sinatra
+  bunny (~> 1.7.0)
+  sinatra (~> 1.4.6)
 
 BUNDLED WITH
    1.10.5
